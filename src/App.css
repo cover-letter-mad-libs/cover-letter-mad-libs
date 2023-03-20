@@ -33,6 +33,17 @@
   /* align-items: center; */
 }
 
+.all-inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-col {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
 .user-inputs form input {
   width: calc(100px + 1rem);
   font-size: 1.2rem;

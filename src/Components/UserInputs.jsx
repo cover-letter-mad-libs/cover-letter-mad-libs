@@ -126,138 +126,173 @@ export default function UserInputs() {
         </div>
 
         <form onSubmit={handleSubmit} style={{ display: isFilled ? 'none' : 'flex'}}>
-        <p>Dear <span><input
-            placeholder="a noun"
-            name="companyName"
-            value={userCompanyName}
-            onChange={(e) => setUserCompanyName(e.target.value)}
-          /></span>, I am <span><input
-          placeholder="an adjective"
-          name="adjective"
-          value={userAdjective}
-          onChange={(e) => setUserAdjective(e.target.value)}
-        /></span> to apply for the position of <span><input
-        placeholder="a job/career"
-        name="jobPosition"
-        value={userJobPosition}
-        onChange={(e) => setUserJobPosition(e.target.value)}
-      /></span>, as advertised on <span><input
-      placeholder="place or location"
-      name="place"
-      value={userPlace}
-      onChange={(e) => setUserPlace(e.target.value)}
-    /></span>. 
-Although my work experience may not be directly related to this industry, 
-I am <span><input
+        <div class="all-inputs">
+        <div class="input-col">
+          <input required={true}
+              placeholder="a noun"
+              name="companyName"
+              value={userCompanyName}
+              onChange={(e) => setUserCompanyName(e.target.value)}
+            />
+          <br />
+          <input required={true}
+              placeholder="an adjective"
+              name="adjective"
+              value={userAdjective}
+              onChange={(e) => setUserAdjective(e.target.value)}
+            />
+          <br />
+          <input required={true}
+          placeholder="a job/career"
+          name="jobPosition"
+          value={userJobPosition}
+          onChange={(e) => setUserJobPosition(e.target.value)}
+        />
+        <br />
+        <input required={true}
+        placeholder="place or location"
+        name="place"
+        value={userPlace}
+        onChange={(e) => setUserPlace(e.target.value)}
+      />
+      <br />
+      <input required={true}
+              placeholder="an adjective"
+              name="adjectiveTwo"
+              value={userAdjectiveTwo}
+              onChange={(e) => setUserAdjectiveTwo(e.target.value)}
+            />
+      <br />
+      <input required={true}
+              placeholder="an adjective"
+              name="adjectiveThree"
+              value={userAdjectiveThree}
+              onChange={(e) => setUserAdjectiveThree(e.target.value)}
+            /> <br />
+      <input required={true}
             placeholder="an adjective"
-            name="adjectiveTwo"
-            value={userAdjectiveTwo}
-            onChange={(e) => setUserAdjectiveTwo(e.target.value)}
+            name="adjectiveFour"
+            value={userAdjectiveFour}
+            onChange={(e) => setUserAdjectiveFour(e.target.value)}
           />
-      </span> in my ability to excel in this role, given my <span><input
-            placeholder="an adjective"
-            name="adjectiveThree"
-            value={userAdjectiveThree}
-            onChange={(e) => setUserAdjectiveThree(e.target.value)}
-          /></span> principles and dedication to <span><input
-          placeholder="an adjective"
-          name="adjectiveFour"
-          value={userAdjectiveFour}
-          onChange={(e) => setUserAdjectiveFour(e.target.value)}
-        /></span> business practices.
-</p>
-<p>As a(n) <span><input
-        placeholder="a job/career"
-        name="jobPosition"
-        value={userJobPositionTwo}
-        onChange={(e) => setUserJobPositionTwo(e.target.value)}
-      /></span>, I have learned the importance of <span><input
-      placeholder="an adjective"
-      name="adjectiveFive"
-      value={userAdjectiveFive}
-      onChange={(e) => setUserAdjectiveFive(e.target.value)}
-    /></span> <span><input
-    placeholder="a noun"
-    name="nounOne"
-    value={userNoun}
-    onChange={(e) => setUserNoun(e.target.value)}
-  /></span>, <span><input
-  placeholder="an adjective"
-  name="adjectiveSix"
-  value={userAdjectiveSix}
-  onChange={(e) => setUserAdjectiveSix(e.target.value)}
-/></span> <span><input
-    placeholder="a noun"
-    name="nounTwo"
-    value={userNounTwo}
-    onChange={(e) => setUserNounTwo(e.target.value)}
-  /></span>, and <span><input
+      <br />
+      <input required={true}
+          placeholder="a job/career"
+          name="jobPosition"
+          value={userJobPositionTwo}
+          onChange={(e) => setUserJobPositionTwo(e.target.value)}
+        />
+      <br />
+      <input required={true}
+        placeholder="an adjective"
+        name="adjectiveFive"
+        value={userAdjectiveFive}
+        onChange={(e) => setUserAdjectiveFive(e.target.value)}
+      />
+      <br />
+      <input required={true}
+      placeholder="a noun"
+      name="nounOne"
+      value={userNoun}
+      onChange={(e) => setUserNoun(e.target.value)}
+    />
+    <br />
+    <input required={true}
+    placeholder="an adjective"
+    name="adjectiveSix"
+    value={userAdjectiveSix}
+    onChange={(e) => setUserAdjectiveSix(e.target.value)}
+  />
+  <br />
+  <input required={true}
+      placeholder="a noun"
+      name="nounTwo"
+      value={userNounTwo}
+      onChange={(e) => setUserNounTwo(e.target.value)}
+    />
+  <br />
+</div>
+<div class="input-col">
+<input required={true}
   placeholder="an adjective"
   name="adjectiveSeven"
   value={userAdjectiveSeven}
   onChange={(e) => setUserAdjectiveSeven(e.target.value)}
-/></span> <span><input
+/>
+<br />
+<input required={true}
     placeholder="a noun"
     name="nounThree"
     value={userNounThree}
     onChange={(e) => setUserNounThree(e.target.value)}
-  /></span>. I understand the value of developing <span><input
+  />
+  <br />
+  <input required={true}
   placeholder="an adjective"
   name="adjectiveEight"
   value={userAdjectiveEight}
   onChange={(e) => setUserAdjectiveEight(e.target.value)}
-/></span> relationships with customers, and I believe that these skills are <span><input
+/>
+<br />
+<input required={true}
   placeholder="an adjective"
   name="adjectiveNine"
   value={userAdjectiveNine}
   onChange={(e) => setUserAdjectiveNine(e.target.value)}
-/></span> to the international <span><input
+/>
+<br />
+<input required={true}
     placeholder="a noun"
     name="nounFour"
     value={userNounFour}
     onChange={(e) => setUserNounFour(e.target.value)}
-  /></span> industry.
-</p>
-<p>
-  I am <span><input
+  />
+<br />
+<input required={true}
   placeholder="an adjective"
   name="adjectiveTen"
   value={userAdjectiveTen}
   onChange={(e) => setUserAdjectiveTen(e.target.value)}
-/></span> to learn new skills and take on new challenges. I believe that my <span><input
+/>
+<br /><input required={true}
   placeholder="an adjective"
   name="adjectiveEleven"
   value={userAdjectiveEleven}
   onChange={(e) => setUserAdjectiveEleven(e.target.value)}
-/></span> work ethic, <span><input
+/>
+<br />
+<input required={true}
   placeholder="an adjective"
   name="adjectiveTwelve"
   value={userAdjectiveTwelve}
   onChange={(e) => setUserAdjectiveTwelve(e.target.value)}
-/></span> attention to detail, and dedication to <span><input
+/>
+<br />
+<input required={true}
   placeholder="an adjective"
   name="adjectiveThirteen"
   value={userAdjectiveThirteen}
   onChange={(e) => setUserAdjectiveThirteen(e.target.value)}
-/></span>  make me a(n) <span><input
+/>
+<br />
+<input required={true}
   placeholder="an adjective"
   name="adjectiveFourteen"
   value={userAdjectiveFourteen}
   onChange={(e) => setUserAdjectiveFourteen(e.target.value)}
-/></span> candidate for this position.
-  </p>
-  <p>
-  Thank you for considering my application. I look forward to the opportunity to discuss my qualifications further.
-  </p>
-  <p>
-  Sincerely,<br/>
-  <span><input
+/>
+<br />
+<input required={true}
   placeholder="a person or name"
   name="name"
   value={userName}
   onChange={(e) => setUserName(e.target.value)}
-/></span>
-  </p>
+/>
+<br />
+</div>
+        </div>
+
+
           <button type="submit">Submit</button>
         </form>
 
