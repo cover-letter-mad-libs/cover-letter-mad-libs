@@ -2,9 +2,9 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
+  // Navigate,
 } from "react-router-dom";
-import { useState } from "react"; 
+// import { useState } from "react"; 
 import "./App.css";
 import CoverLetter from "./Components/CoverLetter";
 import UserInputs from "./Components/UserInputs";
